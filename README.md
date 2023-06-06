@@ -4,8 +4,8 @@ This is a fork of the code/notebook used in the YouTube video [LangChain Explain
 
 ## What is LangChain?
 
-LanchChain is an open source framework that allows AI developers to combine LLMs like GPT-4 with external sources of computation and data.
-For a great quickstart tutorial for beginners and how to use this code, watch the [video](https://youtu.be/aywZrzNaKjs) first.
+LangChain is an open source framework that allows AI developers to combine LLMs like GPT-4 with external sources of computation and data.
+For a nice technical quickstart tutorial on LangChain, please watch the [video](https://youtu.be/aywZrzNaKjs) first.
 
 ## Prerequisites
 
