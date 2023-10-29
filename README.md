@@ -1,6 +1,6 @@
 # langchain-13-min
 
-This is a fork of the code/notebook used in the YouTube video [LangChain Explained in 13 Minutes](https://youtu.be/aywZrzNaKjs) by Rabbitmetrics. The code is slightly modified from the original to use the *Azure* OpenAI LLMs.
+This is a fork of the code/notebook used in the YouTube video [LangChain Explained in 13 Minutes](https://youtu.be/aywZrzNaKjs) by Rabbitmetrics. The code is modified from the original to use the *Azure* OpenAI LLMs and the *Azure* Cognitive Search service for vector search.
 
 ## What is LangChain?
 
@@ -10,7 +10,6 @@ For a nice technical quickstart tutorial on LangChain, please watch the [video](
 ## Prerequisites
 
 * An [Azure account](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/) with an active subscription. Note: If you don't have access to an Azure subscription, you may be able to start with a [free account](https://www.azure.com/free).
-* A (free or paid) [Pinecone Vector database](https://www.pinecone.io/) account to run the vector search examples.
 * If you want to run the code in the Jupyter Notebook on your local machine, you'll need a recent version of [Python 3](https://www.python.org/downloads/) and a Notebook runner (e.g. [Visual Studio Code](https://code.visualstudio.com/)) installed.
 
 ## Preparations
@@ -22,9 +21,9 @@ For a nice technical quickstart tutorial on LangChain, please watch the [video](
 * Click the 'gear' icon in the top-bar of Azure AI Studio, select the 'Resource' tab and:
     * Copy-paste the `Endpoint` of your Azure AI resource into the `OPENAI_API_BASE` variable (see `./notebooks/.env` file)
     * Copy-paste the `Key` of your Azure AI resource into the `OPENAI_API_KEY` variable (see `./notebooks/.env` file)
-* Go to your [Pinecone environment](https://app.pinecone.io/), create a new project (picking any environment) and then create a new index named `langchain-quickstart` (metric=cosine, dimensions=1536)
-* Copy-paste the environment where your Pinecone project is hosted into the `PINECONE_ENV` variable (see `./notebooks/.env` file)
-* Create a new Pinecone API key, and copy-paste that into the environment variable `PINECONE_API_KEY` (see `./notebooks/.env` file)
+* Create an Azure Cognitive Search service and:
+    * Copy-paste the `Endpoint` of your Azure Search instance into the `SEARCH_API_BASE` variable (see `./notebooks/.env` file). The endpoint looks like `https://[your-service-name].search.windows.net`
+    * Copy-paste the admin `Key` of your Azure Search instance into the `SEARCH_API_KEY` variable (see `./notebooks/.env` file).
 
 ## Installing python libs
 
