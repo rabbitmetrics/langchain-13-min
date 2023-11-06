@@ -1,7 +1,7 @@
 python-dotenv==1.0.0
-langchain==0.0.206
-openai==0.27.8
-tiktoken==0.4.0
-ipykernel==6.23.1 # IPython kernel for running jupyter notebook locally
-azure-search-documents==11.4.0a20230509004 --index-url=https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/ 
-azure-identity==1.13.0
+langchain==0.0.325
+openai==0.28.1
+tiktoken==0.5.1
+ipykernel==6.26.0 # IPython kernel for running jupyter notebook locally
+azure-search-documents==11.4.0b8
+azure-identity==1.15.0
